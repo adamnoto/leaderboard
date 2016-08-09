@@ -1,0 +1,19 @@
+{
+  "name": "leader-client",
+  "version": "1.0.0",
+  "description": "The leaderboard client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saveav/leaderboard.git"
+  },
+  "author": "= <=> (http://dots.tripisco.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saveav/leaderboard/issues"
+  },
+  "homepage": "https://github.com/saveav/leaderboard#readme"
+}

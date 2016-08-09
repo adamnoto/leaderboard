@@ -23,3 +23,5 @@
 *.swp
 *.swo
 *.keep
+
+node_modules
