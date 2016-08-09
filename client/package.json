@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/saveav/leaderboard/issues"
   },
-  "homepage": "https://github.com/saveav/leaderboard#readme"
+  "homepage": "https://github.com/saveav/leaderboard#readme",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
 }
