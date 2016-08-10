@@ -1,4 +1,5 @@
 import React from 'react';
+import BoardList from './board-list';
 
 export default class Leaderboard extends React.Component {
     constructor(props) {
@@ -7,8 +8,13 @@ export default class Leaderboard extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>Hello, world!</h1>
+            <div className='app'>
+                <div className='outer'>
+                    <div className='logo'/>
+                    <div className='title'>Leaderboard</div>
+                    <div className='subtitle'>Select your teammate to give them points</div>
+                    <BoardList/>
+                </div>
             </div>
         );
     }
