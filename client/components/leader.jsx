@@ -20,11 +20,12 @@ export default class Leader extends React.Component {
         };
 
         this.onChange = this.onChange.bind(this);
+        this.handleClickEvent = this.handleClickEvent.bind(this);
     }
 
     onChange() {
         this.setState({
-            selected: this.state.id === BoardStore.getSelectedLeaderId()
+            isSelected: this.state.id === BoardStore.getSelectedLeaderId()
         });
     }
 
@@ -34,6 +35,10 @@ export default class Leader extends React.Component {
 
     componentWillUnmount() {
         BoardStore.removeChangeListener(this.onChange);
+    }
+
+    handleClickEvent(e) {
+        BoardStore.setSelectedLeaderId(this.state.id);
     }
 
     render() {
