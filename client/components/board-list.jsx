@@ -2,6 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import BoardActions from '../actions/board-actions.react';
 import BoardStore from '../stores/board-store.react';
+import Leader from './leader';
 
 export default class BoardList extends React.Component {
     constructor(props) {
@@ -34,6 +35,7 @@ export default class BoardList extends React.Component {
                     {this.state.collection.map((data) => (
                         <Leader id={data.id}
                             name={data.name}
+                            totalVote={data.total_vote}
                         ></Leader>
                     ))}
                 </div>
