@@ -16,7 +16,8 @@ export default class Leader extends React.Component {
         this.state = {
             isSelected: false,
             id: this.props.id,
-            name: this.props.name
+            name: this.props.name,
+            totalVote: this.props.totalVote
         };
 
         this.onChange = this.onChange.bind(this);
@@ -50,7 +51,8 @@ export default class Leader extends React.Component {
         return (
             <li key={this.state.id} className={classNames(classes)}
                 onClick={this.handleClickEvent}>
-                {this.state.name}
+                <span className='name'>{this.state.name}</span>
+                <span className='score'>{this.state.totalVote}</span>
             </li>
         )
     }
