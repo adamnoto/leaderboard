@@ -14,6 +14,15 @@ DefaultStore.prototype = assign({}, EventEmitter.prototype, {
 
     removeChangeListener: function(func) {
         this.removeListener('CHANGE', func);
+    },
+
+    setCollection: function(data) {
+        this._collection = data;
+        this.emitChange();
+    },
+
+    getCollection: function(data) {
+        return this._collection;
     }
 });
 
