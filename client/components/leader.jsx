@@ -38,6 +38,12 @@ export default class Leader extends React.Component {
         BoardStore.removeChangeListener(this.onChange);
     }
 
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            totalVote: nextProps.totalVote
+        })
+    }
+
     handleClickEvent(e) {
         BoardStore.setSelectedLeaderId(this.state.id);
     }
