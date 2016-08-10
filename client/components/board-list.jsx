@@ -34,6 +34,7 @@ export default class BoardList extends React.Component {
                 <div className='playerList'>
                     {this.state.collection.map((data) => (
                         <Leader id={data.id}
+                            key={data.id}
                             name={data.name}
                             totalVote={data.total_vote}
                         ></Leader>
