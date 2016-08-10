@@ -1,24 +1,10 @@
-# README
+# Leaderboard
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This source code is used to demonstrate how to use React on Rails, in a
+simple way.
 
-Things you may want to cover:
+Source code is open source and licensed under MIT.
 
-* Ruby version
+## Thanks to:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- The CSS file is taken from Sharedb's example
